@@ -1,0 +1,15 @@
+{
+  "name": "tulsa-20",
+  "version": "1.0.0",
+  "description": "dfd",
+  "main": "index.js",
+  "scripts": {
+    "test": "fdsf"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}
