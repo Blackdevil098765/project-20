@@ -4,6 +4,7 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const mongoose = require('mongoose')
 
 const app = express();
 app.use(express.json());//Make sure this line is present
@@ -11,6 +12,10 @@ app.use(express.json());//Make sure this line is present
 app.use(bodyParser.json());
 app.use(cors());
 
+let dburl = 'mongodb+srv://TulsaDhamnekar:Amruta@cluster0.j9cfq.mongodb.net/';
+mongoose.connect(dburl)
+.then(() => console.log('db connected'))
+.catch((err) =>console.log('DB connection error:',err));
 
 const users = []; //simulating a database
 
